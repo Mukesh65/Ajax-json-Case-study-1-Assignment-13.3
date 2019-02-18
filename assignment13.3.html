@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 3</title>
+</head>
+<body>
+	<div class="demo"></div>
+	<script type="text/javascript">/*
+				var jsonobj = {
+					"firstName": "Mukesh",
+					"age": "25",
+					"weight": "55",
+					"height": "185"
+				}
+				//console.log(jsonobj.firstName);
+
+				//modify value
+				//jsonobj.firstName = "Thakur";
+
+				//add new key value pair;
+				//jsonobj.middlename = "muku";
+
+				for(showalldata in jsonobj){
+					console.log(jsonobj[showalldata]);
+				}*/
+
+				var jsonobj = {
+					"student" : [
+					{
+						"firstName": "Mukesh",
+						"age": "25",
+						"weight": "55",
+						"height": "185"	
+					},
+					{
+						"collegeName": "xyz",
+						"City": "Dehli",
+						"pincode" : "1234"
+					}
+					]
+				}
+				//console.log(jsonobj.student[0].firstName);
+
+				for(data in jsonobj.student){
+					//console.log(data);
+					for(inner_data in jsonobj.student[data]){
+						console.log(jsonobj.student[data][inner_data]);
+					}
+				}
+	</script>
+</body>
+</html>
